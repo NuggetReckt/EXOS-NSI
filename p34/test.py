@@ -1,10 +1,6 @@
-nb = int(input("Rentrez un nombre : "))
-maliste = []
-for i in range(1, nb+1):
-  maliste.append(i)
+def feed(t):
+    for i in range(len(t)):
+        t[i] = 0
+    return t
 
-nbf = 0
-for j in maliste:
-  nbf += j
-
-print(nbf)
+print(feed([12, 24, 32]))
